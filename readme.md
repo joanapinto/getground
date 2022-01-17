@@ -1,4 +1,4 @@
-# GetgGound <img src="http://www.transparentpng.com/thumb/phoenix/YaAO8i-phoenix-background.png" width="48">
+# GetgGround
 
 Automation UI - NHS Costs
 
