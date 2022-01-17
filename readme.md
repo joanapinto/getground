@@ -19,3 +19,6 @@ Go to the **GetGround** project directory then, run the following command:
 ## Running instructions
 
 Open a command line and type ./node_modules/.bin/cypress open
+Then choose the browser (Chrome or Firefox)
+Run each test individually by clicking on each on of them or click on "Run 12 integration specs"
+See the magic happening :D
