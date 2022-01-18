@@ -2,8 +2,6 @@ describe('Scenario 2: all yes except universal-credit-claim', function() {
 
     it('Enter page, accept cookies and start form', function() {
         cy.visit('https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start')
-        cy.get('#nhsuk-cookie-banner__link_accept_analytics').click()
-        cy.get('#nhsuk-success-banner__message').contains('You can change your cookie settings at any time using our cookies page.').children('a')
         cy.get('#next-button').click()
         cy.url().should('include', '/where-you-live')
     }),

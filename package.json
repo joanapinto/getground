@@ -8,7 +8,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:ui": "./node_modules/.bin/cypress open",
     "cypress:chrome": "./node_modules/.bin/cypress run --browser chrome",
     "cypress:firefox": "./node_modules/.bin/cypress run --browser firefox"
