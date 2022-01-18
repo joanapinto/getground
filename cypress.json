@@ -1,5 +1,5 @@
 {
   "projectId": "q3eyjq",
   "chromeWebSecurity": false,
-  "pageLoadTimeout": 30000
+  "pageLoadTimeout": 1200000
 }
