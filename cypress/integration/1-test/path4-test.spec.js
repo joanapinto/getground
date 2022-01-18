@@ -144,7 +144,7 @@ describe('Scenario 4: all yes except universal-credit-claim, no take home pay an
             .should('contain.text', pregnantChildren[index])
         })
         cy.get('#content > div.grid-row > div > p:nth-child(10) > a').should('have.attr', 'href', 'https://www.healthystart.nhs.uk/how-to-apply/')
-        cy.get('#wales-prescription-how > a').should('have.attr', 'href', 'https://gov.wales/low-income-scheme-help-nhs-health-costs')
+        cy.get('#wales-prescription-how > a').should('have.attr', 'href', 'http://www.healthcosts.wales.nhs.uk/entitlement-cards')
         cy.get('.summary').click()
         cy.get('#wales-dental-treatment > p').should('be.visible')
         /*cy.get('#war-pension-explanation > a').click()

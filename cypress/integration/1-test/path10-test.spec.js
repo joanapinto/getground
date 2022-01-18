@@ -74,13 +74,7 @@ describe('Scenario 10: dont have yet universal credit and pension credit benefit
         cy.get('#penCredit').click()
         cy.get('#content > div.grid-row > div > form > div:nth-child(3) > details > summary > span').click()
         cy.get('#benefits').should('be.visible')
-        /*cy.get('#existing-benefit-link').should($a => {
-            expect($a.attr('href'), 'href')
-            expect($a.attr('target'), 'target').to.equal('_blank')
-            $a.attr('target', '_self')
-        }).click()
-        cy.url().should('include', '/existing-benefit-claims')
-        cy.go(-1)*/
+        cy.get('#pension-helpline-link').should('have.attr', 'href', 'https://www.gov.uk/contact-pension-service')
         cy.get('#next-button').click()
         cy.url().should('include', '/pension-credit-type')
     }),
@@ -115,7 +109,8 @@ describe('Scenario 10: dont have yet universal credit and pension credit benefit
             .wrap(item)
             .should('contain.text', pregnantChildren[index])
         })
-        cy.get('#content > div.grid-row > div > p:nth-child(10) > a').should('have.attr', 'href', 'https://www.healthystart.nhs.uk/how-to-apply/')
+        cy.get('#content > div.grid-row > div > p:nth-child(13) > a').should('have.attr', 'href', 'https://www.healthystart.nhs.uk/how-to-apply/')
+        cy.get('#jobcentre-existing-link').should('have.attr', 'href', 'https://www.gov.uk/contact-jobcentre-plus/existing-benefit-claims')
         cy.get('#finished-survey').should('have.attr', 'href', 'https://wh1.snapsurveys.com/s.asp?k=150212725926')
     })
 })

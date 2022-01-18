@@ -136,7 +136,6 @@ describe('Scenario 8: dont have yet universal credit and tax credit benefit', fu
             .wrap(item)
             .should('contain.text', pregnantChildren[index])
         })
-        cy.get('#content > div.grid-row > div > p:nth-child(10) > a').should('have.attr', 'href', 'https://www.healthystart.nhs.uk/how-to-apply/')
         cy.get('#finished-survey').should('have.attr', 'href', 'https://wh1.snapsurveys.com/s.asp?k=150212725926')
     })
 })

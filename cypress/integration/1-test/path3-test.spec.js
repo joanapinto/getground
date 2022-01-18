@@ -127,7 +127,6 @@ describe('Scenario 3: all yes except universal-credit-claim and no take home pay
 
         cy.get('.done-panel')
         cy.get('#content > div.grid-row > div > div.done-panel > h1.heading-large').contains('You can apply for help with NHS costs')
-        cy.get('#wales-print-link').should('have.attr', 'href', 'http://www.healthcosts.wales.nhs.uk/sitesplus/documents/1018/31233_HC1%28SC%29W_English_FINAL%20WEB.pdf')
         cy.get('#content > div.grid-row > div > ul.form-hint-list').children().each( (item, index) => {
             cy
             .wrap(item)
