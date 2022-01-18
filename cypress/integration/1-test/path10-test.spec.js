@@ -74,7 +74,6 @@ describe('Scenario 10: dont have yet universal credit and pension credit benefit
         cy.get('#penCredit').click()
         cy.get('#content > div.grid-row > div > form > div:nth-child(3) > details > summary > span').click()
         cy.get('#benefits').should('be.visible')
-        cy.get('#pension-helpline-link').should('have.attr', 'href', 'https://www.gov.uk/contact-pension-service')
         cy.get('#next-button').click()
         cy.url().should('include', '/pension-credit-type')
     }),
