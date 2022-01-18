@@ -99,7 +99,6 @@ describe('Scenario 1: all yes', function() {
         })
         cy.get('#result-explanation').contains('Your partner and any children under 20 included on your Universal Credit claim are also entitled to full help with NHS costs.')
         cy.get('.bold-small').contains('Your take-home pay changes each assessment period. To avoid any possible penalty charge, check before you claim.')
-        /*cy.get('#finished-survey').click()
-        cy.url().should('include', 'wh1.snapsurveys')*/
+        cy.get('#finished-survey').should('have.attr', 'href', 'https://wh1.snapsurveys.com/s.asp?k=150212725926')
     })
 })

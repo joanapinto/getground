@@ -115,8 +115,7 @@ describe('Scenario 9: dont have yet universal credit and icome support benefit',
             $a.attr('target', '_self')
         }).click()
         cy.url().should('include', '/existing-benefit-claims')
-        cy.go(-1)
-        cy.get('#finished-survey').click()
-        cy.url().should('include', 'wh1.snapsurveys')*/
+        cy.go(-1)*/
+        cy.get('#finished-survey').should('have.attr', 'href', 'https://wh1.snapsurveys.com/s.asp?k=150212725926')
     })
 })
