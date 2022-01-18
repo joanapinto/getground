@@ -15,14 +15,15 @@ Node: 10.15
 ### 2. Install packages
 
 Go to the **GetGround** project directory, then run the following command:
-
-    npm install
-
+```
+npm install
+```
 ## Running instructions - open cypress interface
 
 1. Open a command line and type 
-
-    npm run cypress:ui
+```
+npm run cypress:ui
+```
 
 2. Then choose the browser (Chrome or Firefox)
 3. Run each test individually by clicking on each on of them or click on "Run 12 integration specs"
@@ -30,11 +31,12 @@ Go to the **GetGround** project directory, then run the following command:
 ## Running instructions - run all tests in chrome
 
 1. Open a command line and type 
-
-    npm run cypress:chrome
-
+```
+npm run cypress:chrome
+```
 ## Running instructions - run all tests in firefox
 
 1. Open a command line and type 
-
-    npm run cypress:firefox
+```
+npm run cypress:firefox
+```
