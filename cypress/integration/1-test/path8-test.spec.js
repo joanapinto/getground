@@ -74,13 +74,13 @@ describe('Scenario 8: dont have yet universal credit and tax credit benefit', fu
         cy.get('#taxCredit').click()
         cy.get('#content > div.grid-row > div > form > div:nth-child(3) > details > summary > span').click()
         cy.get('#benefits').should('be.visible')
-        cy.get('#existing-benefit-link').should($a => {
+        /*cy.get('#existing-benefit-link').should($a => {
             expect($a.attr('href'), 'href')
             expect($a.attr('target'), 'target').to.equal('_blank')
             $a.attr('target', '_self')
         }).click()
         cy.url().should('include', '/existing-benefit-claims')
-        cy.go(-1)
+        cy.go(-1)*/
         cy.get('#next-button').click()
         cy.url().should('include', '/tax-credit-type')
     }),
@@ -90,26 +90,26 @@ describe('Scenario 8: dont have yet universal credit and tax credit benefit', fu
         cy.get('#workingChildTaxCredit').click()
         cy.get('#content > div.grid-row > div > form > details > summary > span').click()
         cy.get('#content > div.grid-row > div > form > details > p:nth-child(2)').should('be.visible')
-        cy.get('#check-credit-link').should($a => {
+        /*cy.get('#check-credit-link').should($a => {
             expect($a.attr('href'), 'href')
             expect($a.attr('target'), 'target').to.equal('_blank')
             $a.attr('target', '_self')
         }).click()
         cy.url().should('include', '/tax-credits-enquiries')
-        cy.go(-1)
+        cy.go(-1)*/
         cy.get('#next-button').click()
         cy.url().should('include', '/tax-credit-income')
     }),
 
     it('household income £15,276 or less - Yes', function() {
         cy.get('#question-heading').contains('Is your household income £15,276 or less?')
-        cy.get('#tax-credit-link').should($a => {
+        /*cy.get('#tax-credit-link').should($a => {
             expect($a.attr('href'), 'href')
             expect($a.attr('target'), 'target').to.equal('_blank')
             $a.attr('target', '_self')
         }).click()
         cy.url().should('include', '/tax-credits-enquiries')
-        cy.go(-1)
+        cy.go(-1)*/
         cy.get('#radio-yes').click()
         cy.get('#next-button').click()
         cy.url().should('include', '/result-claiming-qualifying-tax-credit')
@@ -136,10 +136,10 @@ describe('Scenario 8: dont have yet universal credit and tax credit benefit', fu
             .wrap(item)
             .should('contain.text', pregnantChildren[index])
         })
-        cy.get('#content > div.grid-row > div > p:nth-child(13) > a').click()
+        /*cy.get('#content > div.grid-row > div > p:nth-child(13) > a').click()
         cy.url().should('include', '/how-to-apply')
         cy.go(-1)
         cy.get('#finished-survey').click()
-        cy.url().should('include', 'wh1.snapsurveys')
+        cy.url().should('include', 'wh1.snapsurveys')*/
     })
 })

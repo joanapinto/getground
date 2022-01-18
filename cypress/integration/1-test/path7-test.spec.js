@@ -136,7 +136,7 @@ describe('Scenario 7: all yes except universal-credit-claim, no take home pay an
             .wrap(item)
             .should('contain.text', pregnantChildren[index])
         })
-        cy.get('#content > div.grid-row > div > p:nth-child(10) > a').click()
+        /*cy.get('#content > div.grid-row > div > p:nth-child(10) > a').click()
         cy.url().should('include', '/how-to-apply')
         cy.go(-1)
         cy.get('#wales-prescription-how > a').click()
@@ -151,6 +151,6 @@ describe('Scenario 7: all yes except universal-credit-claim, no take home pay an
         cy.url().should('include', '/apply-online-invite')
         cy.go(-1)
         cy.get('#finished-survey').click()
-        cy.url().should('include', 'wh1.snapsurveys')
+        cy.url().should('include', 'wh1.snapsurveys')*/
     })
 })

@@ -102,11 +102,11 @@ describe('Scenario 2: all yes except universal-credit-claim', function() {
             .wrap(item)
             .should('contain.text', pregnantChildren[index])
         })
-        cy.get('#content > div.grid-row > div > p:nth-child(13) > a').click()
+        /*cy.get('#content > div.grid-row > div > p:nth-child(13) > a').click()
         cy.url().should('include', '/how-to-apply')
-        cy.go(-1)
+        cy.go(-1)*/
         cy.get('.bold-small').contains('Your take-home pay changes each assessment period. To avoid any possible penalty charge, check before you claim.')
-        cy.get('#finished-survey').click()
-        cy.url().should('include', 'wh1.snapsurveys')
+        /*cy.get('#finished-survey').click()
+        cy.url().should('include', 'wh1.snapsurveys')*/
     })
 })

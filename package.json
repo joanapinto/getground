@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "cypress:ui": "./node_modules/.bin/cypress open",
-    "cypress:chrome": "./node_modules/.bin/cypress run --browser chrome",
+    "cypress:chrome": "./node_modules/.bin/cypress run --browser chrome --headed",
     "cypress:firefox": "./node_modules/.bin/cypress run --browser firefox"
   },
   "repository": {

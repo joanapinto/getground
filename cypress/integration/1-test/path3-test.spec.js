@@ -127,7 +127,7 @@ describe('Scenario 3: all yes except universal-credit-claim and no take home pay
 
         cy.get('.done-panel')
         cy.get('#content > div.grid-row > div > div.done-panel > h1.heading-large').contains('You can apply for help with NHS costs')
-        cy.get('#lis-button').click()
+        /*cy.get('#lis-button').click()
         cy.url().should('include', '/apply-online-invite')
         cy.go(-1)
         cy.get('#wales-print-link').should($a => {
@@ -135,7 +135,7 @@ describe('Scenario 3: all yes except universal-credit-claim and no take home pay
             expect($a.attr('target'), 'target').to.equal('_blank')
             $a.attr('target', '_self')
         }).click()
-        cy.go(-1)
+        cy.go(-1)*/
         cy.get('#content > div.grid-row > div > ul.form-hint-list').children().each( (item, index) => {
             cy
             .wrap(item)
@@ -146,7 +146,7 @@ describe('Scenario 3: all yes except universal-credit-claim and no take home pay
             .wrap(item)
             .should('contain.text', moneyOff[index])
         })
-        cy.get('#finished-survey').click()
-        cy.url().should('include', 'wh1.snapsurveys')
+        /*cy.get('#finished-survey').click()
+        cy.url().should('include', 'wh1.snapsurveys')*/
     })
 })

@@ -74,13 +74,13 @@ describe('Scenario 10: dont have yet universal credit and pension credit benefit
         cy.get('#penCredit').click()
         cy.get('#content > div.grid-row > div > form > div:nth-child(3) > details > summary > span').click()
         cy.get('#benefits').should('be.visible')
-        cy.get('#existing-benefit-link').should($a => {
+        /*cy.get('#existing-benefit-link').should($a => {
             expect($a.attr('href'), 'href')
             expect($a.attr('target'), 'target').to.equal('_blank')
             $a.attr('target', '_self')
         }).click()
         cy.url().should('include', '/existing-benefit-claims')
-        cy.go(-1)
+        cy.go(-1)*/
         cy.get('#next-button').click()
         cy.url().should('include', '/pension-credit-type')
     }),
@@ -115,7 +115,7 @@ describe('Scenario 10: dont have yet universal credit and pension credit benefit
             .wrap(item)
             .should('contain.text', pregnantChildren[index])
         })
-        cy.get('#content > div.grid-row > div > p:nth-child(13) > a').click()
+        /*cy.get('#content > div.grid-row > div > p:nth-child(13) > a').click()
         cy.url().should('include', '/how-to-apply')
         cy.go(-1)
         cy.get('#jobcentre-existing-link').should($a => {
@@ -126,6 +126,6 @@ describe('Scenario 10: dont have yet universal credit and pension credit benefit
         cy.url().should('include', '/existing-benefit-claims')
         cy.go(-1)
         cy.get('#finished-survey').click()
-        cy.url().should('include', 'wh1.snapsurveys')
+        cy.url().should('include', 'wh1.snapsurveys')*/
     })
 })
